@@ -1,0 +1,303 @@
+body {
+font-family:arial;
+text-align: justify;
+}
+imgX {
+}
+
+/* link attributes */
+a:link {
+        color: black;
+        text-decoration: none;
+}
+a:visited {
+        color: black;
+        text-decoration: none;
+}
+a:hover {
+        color: red;
+        font-size: 100%;
+        text-decoration: none;
+}
+
+
+
+.bg {
+	width:100%;
+	padding:0%;
+	background:#D3D3D3 url('../images/background.jpg') repeat;
+	overflow: auto;
+}
+
+.header {
+    display: table;
+	width: 100%;
+	padding:0%;
+	background:red url('a.png') no-repeat;
+	color:white;
+	font-size:200%;
+	text-align:right;
+
+}
+.headerp {
+    display: table;
+	width: 100%;
+	background:#FFF8C6 url('a.png') no-repeat;
+	color:black;
+	font-size:150%;
+	text-align:justify;
+
+}
+.header1 {
+    display: table;
+    width: 100%;
+}
+
+
+.headh1 {
+	color:red;
+	font-size:120%;
+	text-align:right;
+}
+
+.headh2{
+	color:red;
+	font-size:60%;
+	text-align:right;
+}
+
+
+
+.dynamic_height_giver {
+        display: table-cell; 
+        width:100px;
+       
+ background: #A9A9A9;
+
+        vertical-align: middle;
+	text-align:left;
+    }
+    
+.imgCen {
+    display: block;   
+    margin-left: auto;
+    margin-right: auto
+
+	}
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+        }
+
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+
+.ColLeft {
+	width: 20%;
+	float: left;
+	background:#D3D3D3  url('a.png') no-repeat;
+	color:black;
+	text-size:100%;
+}
+.ColRight {
+	width: 20%;
+	float: right;
+	padding:0%;
+	background:#D3D3D3  url('a.png') no-repeat;
+	color:black;
+	text-size:100%;
+}
+
+.ColMid {
+margin-left:21%;
+	width: 58%;
+	background:#D3D3D3 url('a.png') no-repeat;
+	color:black;
+	text-size:100%;
+	text-align: justify;
+}
+
+.ColMid h1{
+	background:#D3D3D3 ;
+	color:red;
+	font-size:180%;
+	
+}
+
+.ColMid h2{
+	background:red ;
+	color:white;
+	font-size:120%;
+}
+.ColMid h3{
+	background:#D3D3D3 ;
+	color:red;
+	font-size:120%;
+	
+}
+.ColMid h4{
+	background:white ;
+	color:black;
+	font-size:90%;
+	
+}	
+.imgbackground {
+        display: table-cell;
+        vertical-align: bottom;
+        width:100%;
+        text-align:center;
+    }
+
+.footer {
+	width: 100%;
+	padding:0%;
+	background:red url('a.png') no-repeat;
+	color:white;
+	font-size:90%;
+	text-align:center;
+}
+
+.RowEvenC {
+	padding:0%;
+	background:#FFF8C6 ;
+	color:black;
+}
+.RowOddC {
+	padding:0%;
+	background:white ;
+	color:black;
+}
+
+.RowEvenCH {
+	padding:0%;
+	background:white ;
+	color:black;
+}
+.RowOddCH {
+	padding:0%;
+	background:black ;
+	color:white;
+}
+
+.RowEventext {
+
+        background:red;  
+	color:white;
+        font-size:120%;
+}
+.RowOddtext {
+	background:white ;
+	color:black;
+       font-size:120%;
+}
+.RowEventext1 {
+        background:#D3D3D3;      
+        color:red;
+        font-size:120%;
+}
+.RowOddtext1 {
+        background:red ;
+        color:white;
+       font-size:120%;
+}
+
+.RowEvenS {
+	padding:4%;
+	background:#FFF8C6 ;
+	color:black;
+	text-align:left
+}
+.RowOddS {
+	padding:4%;
+	background:white;
+	color:black;
+	text-align:left
+}
+.title1 {
+	padding:10%;
+	background:#90EE90;
+	color:black;
+	text-align:right;
+}
+.title2 {
+	padding:0%;
+	background:red;
+	color:white;
+        text-align:left
+}
+.footerLogo {
+	text-align:center;
+	color:white;
+        background:white;
+}
+
+.footerLogoH {
+	text-align:center;
+	color:white;
+        background:black;
+}
+
+.footerLogo h2{
+	color:red;
+        background:#D3D3D3;
+	font-size:150%;
+	text-align:center;
+}
+.hide {
+	color:green;
+	font-size:100%;
+	text-align:center;
+}
+.Honour {
+	color:black;
+	font-size:180%;
+	text-align:left;
+}
+
+.ConfNo {
+        color:black;
+        font-size:75%;
+        text-align:left;
+}
+
+.Gap {
+	padding:1px;
+}
+.GapR {
+	padding:1px;
+}
+.GapBig {
+	background:#90EE90;
+	padding:0px;
+}
+
+
+
+table, td{
+	font:100% Arial, Helvetica, sans-serif; 
+}
+table{width:100%;border-collapse:collapse;margin:0;background: url(../images/background.jpg) repeat-x;color:#fff;}
+th, td{text-align:left;padding:.2em;border:0px solid #fff;}
+th{background:#328aa4 url(../images/background.jpg) repeat-x;color:#fff;}
+td{background:yellow;background: url(../images/background.jpg) repeat-x;color:#fff;}
+
+/* tablecloth styles */
+
+tr.even td{background:#e5f1f4;}
+tr.odd td{background:#f8fbfc;}
+
+th.over, tr.even th.over, tr.odd th.over{background:#4a98af;}
+th.down, tr.even th.down, tr.odd th.down{background:#bce774;}
+th.selected, tr.even th.selected, tr.odd th.selected{}
+
+td.over, tr.even td.over, tr.odd td.over{background:#ecfbd4;}
+td.down, tr.even td.down, tr.odd td.down{background:#bce774;color:#fff;}
+td.selected, tr.even td.selected, tr.odd td.selected{background:#bce774;color:#555;}
+
+/* use this if you want to apply different styleing to empty table cells*/
+td.empty, tr.odd td.empty, tr.even td.empty{background:#fff;}

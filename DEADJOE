@@ -1,0 +1,301 @@
+
+*** These modified files were found in JOE when it aborted on Sun Nov 27 18:44:55 2011
+*** JOE was aborted because the terminal closed
+
+*** File 'KeyDates.php'
+<?php
+$Table = "key_dates";
+
+$sql = "SELECT * FROM $Table" ;
+
+$result = mysql_query($sql);
+
+$rownumber=0;
+
+while($row = mysql_fetch_array($result))
+ { 
+  if($rownumber%2==0) $layout="RowEvenC";
+  else
+  {
+   $layout="RowOddC";
+  }
+
+  $rownumber++;
+
+  $item[0] = "";
+  $item[0] .= " <div id= $layout >";
+   $item[0] .=  $row['name'] . $row['date'] ."<br/>";
+   $item[0] .=   " </div> ";
+
+ echo $item[0];
+
+ }
+?>
+
+*** File '(Unnamed)'
+www
+1006
+?
+footer
+.png
+ultratec
+pons
+topic_list
+topic
+topic
+
+*** File '(Unnamed)'
+css/ukieriRai.css
+LinksLeft.php
+LinksLeft.php
+LinksLeft.php
+LinksRight.php
+LinksRight.php
+LinksRight.php
+main.php
+LinksLeft.php
+LinksRight.php
+KeyDates.php
+keydates.php
+ConferenceDetail.php
+
+*** These modified files were found in JOE when it aborted on Mon Nov 28 22:15:45 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+topic
+topic
+rai
+h1
+h1
+Header
+item
+user_id
+rownumber
+eft
+
+*** File '(Unnamed)'
+org2.php
+org2.php
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+KeyDates.php
+KeyDates.php
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+
+*** These modified files were found in JOE when it aborted on Mon Nov 28 23:55:41 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+rai
+h1
+h1
+Header
+item
+user_id
+rownumber
+eft
+FooterWidth
+$Table
+
+*** File '(Unnamed)'
+home.php
+home.php
+home.php
+home.php
+home.php
+home.php
+home.php
+home.php
+home.php
+home.php
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+
+*** These modified files were found in JOE when it aborted on Tue Nov 29 09:57:05 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+h1
+Header
+item
+user_id
+rownumber
+eft
+FooterWidth
+$Table
+erLogo
+h2
+CH
+color:red
+
+*** File '(Unnamed)'
+footer.php
+footer.php
+footer.php
+footer.php
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+home.php
+home.php
+home.php
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+home.php
+css/ukieriRai.css
+css/ukieriRai.css
+
+*** These modified files were found in JOE when it aborted on Wed Nov 30 23:56:31 2011
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Thu Dec  1 11:47:47 2011
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Fri Dec  2 09:28:51 2011
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Fri Dec  2 13:14:39 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+ddS
+Dedic
+nour
+evenS
+nS
+align
+itle2
+bg
+header
+table
+.jpg
+XXX
+xxx
+
+*** File '(Unnamed)'
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+images.php
+images.php
+images.php
+home.php
+home.php
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+css/ukieriRai.css
+
+*** These modified files were found in JOE when it aborted on Fri Dec  2 20:40:33 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+itle2
+bg
+header
+table
+background.jpg
+<tr><tr>
+<tr>
+br/>
+br
+br
+
+*** File '(Unnamed)'
+header.php
+header.php
+header.php
+header.php
+ConferenceDetail.php
+ConferenceDetail.php
+TradeFair.php
+header.php
+KeyDates.php
+KeyDates.php
+footer.php
+
+*** These modified files were found in JOE when it aborted on Fri Dec  2 23:56:46 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+Gap
+red
+Large
+99
+alt
+br
+<br
+div
+99
+id
+
+*** File '(Unnamed)'
+TradeFair.php
+TradeFair.php
+Organisation.php
+org2.php
+TradeFair.php
+TradeFair.php
+TradeFair.php
+TradeFair.php
+ConferenceDetail.php
+TradeFair.php
+TradeFair.php
+
+*** These modified files were found in JOE when it aborted on Mon Dec  5 23:04:15 2011
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Sun Mar  4 18:15:35 2012
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Sun Mar  4 18:37:00 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+Organisation.php
+org2.php
+org2.php
+org2.php
+org2.php
+org2.php

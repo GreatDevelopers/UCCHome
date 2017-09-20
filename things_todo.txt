@@ -1,0 +1,33 @@
+    Header picture must be impressive and should reflect Indian touch.
+
+    Middle scroll should be removed.
+
+    Pictures of Indian musical instruments, cultural and regional dances, dresses etc., should be included.
+
+    On homepage, for the text above the pictures, padding is required.
+
+    Footer should start immediately after left, mid and right columns. There should be no space in between.
+
+    On genesis page, first picture should be moved downward to make it aligned with left and right columns.
+
+    Conference column should be removed and one more link can be created i.e. 'Conferences' which will give the list of links to conference pages AND/OR write on homepage "Presenting prominently 6 conferences. Click here to see details." which shows conference names and links: "Click here to see themes" or something similar. Please suggest: should we go with first option, or second or both.
+
+    '/1/' in url of website should be replaced with search engine friendly text.
+
+    Formatting of heading and sub heading should be improved and done according to Brochure. Size of sub heading should be smaller than main heading.
+
+    Links of right column like 'Punjab', 'Jalandhar', 'NITJ', 'GNDEC' should be made accessible from footer and be removed from right column.
+
+    Fancy icons of Facebook, Google+, Twitter should be used. Other information on homepage related to facebook should be removed.
+
+    Links within the mid column on different pages should be differentiated from rest of the text. Same formatting should be used for all links.
+
+    Black background of all pictures should be changed and set appropriately.
+
+    Pictures in the mid column can be made to slide.
+
+    Following line(s) should be showed on the homepage:
+
+    "Last date of abstract submission: 31st, March, 12"  or "15 days remaining to abstract submission" or something similar.
+
+@all: In case some point is missing or to give more suggestions, please add to above. Also keep reporting here about the work you 

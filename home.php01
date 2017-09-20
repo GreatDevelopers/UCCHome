@@ -1,0 +1,58 @@
+<?php
+$Table = "data";
+
+$result = mysql_query("SELECT * FROM $Table where id <'3'");
+
+$rownumber=0;
+
+while($row = mysql_fetch_array($result))
+{
+if($rownumber%2==0) $layout="RowEvenCH";
+  else
+  {
+   $layout="RowOddCH";
+  }
+  $rownumber++;
+  $item[0] = "";
+  $item[0] .= " <div id=$layout >";
+if($row['title']!=null)
+{
+ $item[0] .= "<h1>".$row['title'].":"." ". $row['sub_title']."</h1>";
+}
+ $item[0] .=   $row['text']."<br/><br/><div id=$layout >" ;
+ $item[0] .= "</div>";
+ $item[0] .= "</div>";
+
+ echo $item[0];
+}
+?>
+<?php
+$Table = "images";
+$HeaderHeigth="100%";
+$ImageSize="75px";
+$PathImage = "../Pictures/";
+$result = mysql_query("SELECT * FROM $Table where user_id ='1'");
+
+$rownumber=0;
+echo "<table border='0'>";
+echo "</tr>";
+while($row = mysql_fetch_array($result))
+{
+if($rownumber%2==0) $layout="RowEvenCH";
+  else
+  {
+   $layout="RowOddCH";
+  }
+  $rownumber++;
+ // $item[0] = "";
+echo " <div id=$layout >";
+  
+echo "<td>"." <img src=\"" . $PathImage . $row['image'] . "\" width = $ImageSize > ";
+//echo  $row['caption'] ;
+ 
+echo "</div>";
+
+}
+echo "</tr>";
+echo "</table>";
+?>

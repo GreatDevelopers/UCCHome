@@ -1,0 +1,115 @@
+#bg {
+	width:99%;
+//	border: 1% solid black;
+	padding:.5%;
+	background:lightgrey url('a.png') no-repeat;
+	overflow: auto;
+}
+
+#header {
+//	position:relative;
+	width: 96%;
+//	border: 3px solid green;
+	padding:2%;
+	background:red url('a.png') no-repeat;
+	color:white;
+	font-size:200%;
+	text-align:right;
+}
+
+#ColLeft {
+	width: 18%;
+	float: left;
+//	border: 3px solid green;
+	padding:1%;
+	background:grey  url('a.png') no-repeat;
+	color:white;
+	text-size:100%;
+}
+#ColRight {
+	width: 18%;
+	float: right;
+//	float: center;
+//	border: 3px solid green;
+	padding:1%;
+	background:grey  url('a.png') no-repeat;
+	color:white;
+	text-size:100%;
+}
+
+#ColMid {
+	width: 98%;
+//	position:absolute;
+//	left: 25%
+//	float: left;
+//	border: 3px solid green;
+	padding:1%;
+	background:white url('a.png') no-repeat;
+	color:black;
+	text-size:100%;
+}
+
+#footer {
+//	position:relative;
+	width: 96%;
+//	border: 3px solid green;
+	padding:2%;
+	background:red url('a.png') no-repeat;
+	color:white;
+	font-size:80%;
+	text-align:center;
+}
+
+
+#div-1 {
+ position:relative;
+}
+#div-1a {
+ position:absolute;
+ top:0;
+ right:0;
+ width:200px;
+}
+
+
+#div-1 {
+ position:relative;
+}
+#div-1a {
+ position:absolute;
+ top:0;
+ right:0;
+ width:200px;
+}
+#div-1b {
+ position:absolute;
+ top:0;
+ left:0;
+ width:200px;
+}
+
+#div-1a {
+ float:left;
+ width:200px;
+}
+
+
+#div-1a {
+ float:left;
+ width:190px;
+}
+#div-1b {
+ float:left;
+ width:190px;
+}
+#div-1c {
+ clear:both;
+}
+
+#div.container {
+	border: 1px solid #000000;
+	overflow: auto;
+	width: 100%
+}
+
+=========== chnage following container with upper one

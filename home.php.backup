@@ -1,0 +1,82 @@
+<?php
+
+$Table = "data";
+
+
+
+
+$result = mysql_query("SELECT * FROM $Table where id ='2'");
+
+echo "<table>";
+while($row = mysql_fetch_array($result))
+{
+ $layout="RowOddCH";
+
+  $item[0] = "";
+  $item[0] .= " <div class=$layout>";
+if($row['title']!=null)
+{
+ $item[0] .= "<h1>".$row['title'].":"." ". $row['sub_title']."</h1>";
+}
+ $item[0] .=   $row['text'] ;
+// $item[0] .= "</div>";
+
+ echo $item[0];
+}
+
+
+$Table = "images";
+$HeaderHeigth="100%";
+$ImageSize="11%";
+$PathImage = "Pictures/";
+$result = mysql_query("SELECT * FROM $Table where id <= '7'");
+
+$rownumber=0;
+
+//echo "<div class=\"footerLogoH\">";
+
+echo "<tr><td class='RowOddCH'>";
+while($row = mysql_fetch_array($result))
+{
+  $rownumber++;
+ echo "<a href=\"" . $SERVER['PHP_SELF'] . "?refNo=" . $row['id'] . "&#38;fileRef=" . "images" . "\">" . " <img src=\"" . $PathImage . $row['image'] . "\" width = $ImageSize alt= \"logo\" > "."</a>";
+//echo " <img src=\"" . $PathImage . $row['image'] . "\" width = $ImageSize > ";
+//echo  $row['caption'] ;
+ 
+//echo "</div>";
+
+}
+echo "</td></tr>";
+//echo "</div>";
+echo "</div>";
+echo "</td></tr>";
+
+$Table = "data";
+
+
+$s1 = "SELECT * FROM $Table where id ='1'";
+$result3 = mysql_query("$s1");
+
+echo "<tr><td bgcolor='#F6F6F6'>";
+while($row3 = mysql_fetch_array($result3))
+{
+ $layout="RowEvenCH";
+
+  $item[0] = "";
+  $item[0] .= " <div class=$layout >";
+if($row3['title']!=null)
+{
+ $item[0] .= "<div class='bgRed'>".$row3['title']."</div><div class='bgGrey'>". $row3['sub_title']."</div><br>";
+}
+ $item[0] .=   $row3['text'] ;
+ $item[0] .= "</div>";
+
+ echo $item[0];
+}
+echo "</td></tr></table>";
+
+
+
+?>
+
+<!--<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FUkieriConcreteCongress&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color=red&amp;stream=false&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>-->

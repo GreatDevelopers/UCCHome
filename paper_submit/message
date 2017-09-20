@@ -1,0 +1,16 @@
+The following submission has been registered. message was sent to me@jagdeepmalhi.com for confirmation. The new submission appears in Author Console under Authors Menu. Thank you for visiting this page and check if other information is required, and in particular the transfer of additional files.:
+
+Title: Information Technology
+List of authors: JS Malhi, Jagdeep Singh
+Main topic: Conf.6 : Others
+Note that the deadline for submission is 31 March 2012. After this date, no changes will be accepted.
+
+
+Abstract
+Author
+Paper
+PaperAnswer,
+User (if new author is added).
+
+
+INSERT INTO `Paper` (`id`, `title`, `authors`, `emailContact`, `abstract`, `topic`, `nb_authors_in_form`, `status`, `isUploaded`, `format`, `fileSize`, `submission_date`, `assignmentWeight`, `inCurrentSelection`, `CR`, `id_conf_session`, `position_in_session`, `paper_type`, `images`) VALUES ('36', 'Information Technology', '', 'me@jagdeepmalhi.com', '', '90', '4', '1', 'N', 'pdf', NULL, NULL, NULL, 'Y', '1', NULL, NULL, '0', '1');

@@ -1,0 +1,57 @@
+<?php
+$Table = "User";
+
+$RaiImagePath = "images/";
+$RaiImageName = "uccLogo100T.png";
+$RaiImageWidht = "40";
+$RaiImageHeight = $RaiImageWidht;
+$RaiAltText = "Organisers";
+
+
+while ( $row2 = mysql_fetch_array($res2))
+{
+
+$sql = "select * from $Table where org = ";
+
+$sql .= $row2['position'] ;
+
+//echo $sql;
+
+$res = mysql_query($sql);
+//$rownumber=0;
+//echo "<table>";
+while ( $row = mysql_fetch_array($res))
+{
+  if($rownumber%2==0) $layout="RowEvenC";
+  else
+  {   
+   $layout="RowOddC";
+  }
+   
+  $rownumber++;
+
+//  $item[0] .= "<table>";
+//  $item[0] ="<tr><td>";
+  $item[0] .= " <div class= $layout > " ;
+  $item[0] .= " " . InsertImage($RaiImageName,$RaiImagePath,$RaiAltText,$RaiImageWidht,$RaiImageHeight) . $row['first_name'];
+//  $item[0] ="</tr></td>";
+  $item[0] .= " ".  $row['last_name'] . "<br>";
+  // . "</div></td><td> <div id= $layout >";
+
+if ($row2['position'] > 0 and $row2['position'] < 4)
+{
+  $item[0] .= $row2['name'] . ", "; 
+}
+
+   $item[0] .=  $row['address'];
+//   $item[0] .= "</td></tr></table>";
+   $item[0] .=  "</div>";
+   //"<td><tr>";
+//   $item[0] .=   " </div> ";
+
+ echo $item[0];
+
+ }
+// echo "</table>";
+}
+?>

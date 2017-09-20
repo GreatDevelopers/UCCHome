@@ -1,0 +1,10 @@
+*.tar.gz
+*.swp
+*~
+*.sql
+*.pdf
+*.docx
+*.doc
+*.zip
+*.sql.gz
+files/*
