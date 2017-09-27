@@ -1,15 +1,13 @@
 <?php
+$table = "data";
+$sql = "SELECT * FROM $table WHERE Container = 'Right' order by 'Weight'";
 
-$Table = "data";
-
-$sql = "SELECT * FROM $Table WHERE Container = 'Right' order by `Weight`";
-
-$result = mysql_query($sql);
+$result = mysqli_query($con, $sql);
 
 $rownumber=0;
   $item[0] = " <ul id=\"left_nav\">";
 
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
  { 
   if($rownumber%2==0) $layout="RowEvenS";
   else

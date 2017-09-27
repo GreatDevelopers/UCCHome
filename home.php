@@ -1,10 +1,9 @@
 <?php
 $Table = "data";
-
-$result = mysql_query("SELECT * FROM $Table where id ='2'");
+$result = mysqli_query($con, "SELECT * FROM $Table where id ='2'");
 
 echo "<table>";
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
 {
     $layout="RowOddCH";
 
@@ -25,17 +24,17 @@ $Table = "images";
 $HeaderHeigth="100%";
 $ImageSize="100%";
 $PathImage = "Pictures/";
-$result = mysql_query("SELECT * FROM $Table where id <= '7'");
+$result = mysqli_query($con, "SELECT * FROM $Table where id <= '7'");
 
 $rownumber=0;
 
 //echo "<div class=\"footerLogoH\">";
 
 echo "<tr style='background:lightgray;'>";
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
 {
-    $resultthree = mysql_query("select * from User where key_id = '".$row['id']."'");
-    $d = mysql_fetch_array($resultthree);
+    $resultthree = mysqli_query($con, "select * from User where key_id = '".$row['id']."'");
+    $d = mysqli_fetch_array($resultthree);
     $rownumber++;
     echo "<td><a href=\"" . $PHP_SELF . "?refNo=" . $row['id'] . "&#38;fileRef=" . "images" . "\">" . " <img src=\"" . $PathImage . $row['image'] . "\" style = \" width:".$ImageSize.";\"  alt= \"logo\" title='".$d['first_name']." ".$d['last_name'].", ".$d['affiliation'].", ".$d['address']."'> "."</a></td>";
 //echo " <img src=\"" . $PathImage . $row['image'] . "\" width = $ImageSize > ";
@@ -45,8 +44,8 @@ while($row = mysql_fetch_array($result))
 
 }
 echo "</tr><tr style='background:lightgray'>";
-$resulttwo = mysql_query("select * from User where key_id !='0' AND key_id <='7'");
-while($data_all = mysql_fetch_array($resulttwo))
+$resulttwo = mysqli_query($con, "select * from User where key_id !='0' AND key_id <='7'");
+while($data_all = mysqli_fetch_array($resulttwo))
 {
 $name = $data_all['first_name'];
 echo "<td style='text-align:left;font-size:12px'>".$name[0].". ".$data_all['last_name'].", ".$data_all['address']."</td>";

@@ -57,12 +57,12 @@ include 'rai.php';
 $tablename="Config";
 $HeaderHeigth="100";
 $Date = "2 - 5 November 2015 Jalandhar Punjab India";
-$result = mysql_query("SELECT * FROM $tablename");
+$result = mysqli_query($con, "SELECT * FROM $tablename");
 $PathImage = "Pictures/";
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
   { 
 
-
+$item = array();
 $item[0].= "";
 $item[0].= "<div class=\"bg\" ><div id=\"header\" >"; 
 

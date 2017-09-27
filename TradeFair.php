@@ -1,9 +1,9 @@
 <?php
 $Table = "data";
 $sql = "select * from $Table where id = $refNo ";
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 $rownumber=0;
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
   if($rownumber%2==0) $layout="RowEvenC";
   else
@@ -24,9 +24,9 @@ if($_GET['refNo'] != 27){
 }else
 {
 $sql_two = "select * from conf_name";
-$res_two = mysql_query($sql_two);
+$res_two = mysqli_query($con, $sql_two);
 $item[0] .= "<table>";
-while($data = mysql_fetch_array($res_two)){
+while($data = mysqli_fetch_array($res_two)){
 $date = strtotime($data['date']);
 $new_date = date('l, j F Y',$date);
 $item[0] .= "<tr><td>".$data['conf']."</td><td><a href='index.php?refNo=".$data['id']."&fileRef=ConferenceDetail'>".$data['name']."</a></td><td>".$new_date."</td></tr>";
@@ -63,14 +63,14 @@ while($change_label[$ImID])
 {
 $sql2 = "SELECT * FROM $Table2 where id = $change_label[$ImID]";
 //echo $sql2;
-$result2 = mysql_query($sql2);
+$result2 = mysqli_query($con, $sql2);
 $ImID++;
 
 $rownumber3=0;
 
 //echo "<div class='footerLogoH'>";
 //echo "<table>";
-while($row3 = mysql_fetch_array($result2))
+while($row3 = mysqli_fetch_array($result2))
 {
   $rownumber3++;
  echo "<tr><td class='footerLogoH'><img src=\"" . $PathImage . $row3['image'] . "\"width = " . $ImageSize . " alt =\"image\" > ";

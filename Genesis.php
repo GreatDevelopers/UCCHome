@@ -4,12 +4,12 @@ $Table = "images";
 //$HeaderHeigth="100%";
 $ImageSize="\"99%\"";
 $PathImage = "400/";
-$result = mysql_query("SELECT * FROM $Table where id = '9'");
+$result = mysqli_query($con, "SELECT * FROM $Table where id = '9'");
 
 $rownumber=0;
 echo "<table>";
 
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
 {
   $rownumber++;
  echo "<tr><td class='footerLogoH'><img src=\"" . $PathImage . $row['image'] . "\" width = " . $ImageSize . " alt = \"" . $row['caption'] . "\"> ";
@@ -26,11 +26,11 @@ echo "</div>";
 
 $Table = "data";
 $sql = "select * from $Table where id = $refNo ";
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 $rownumber=0;
 
 echo "<table>";
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
   if($rownumber%2==0) $layout="RowEvenC";
   else
@@ -54,7 +54,7 @@ $Table = "images";
 //$HeaderHeigth="100%";
 $ImageSize="\"99%\"";
 $PathImage = "400/";
-$result = mysql_query("SELECT * FROM $Table where id = '8'");
+$result = mysqli_query($con, "SELECT * FROM $Table where id = '8'");
 
 $rownumber=0;
 
@@ -62,7 +62,7 @@ $rownumber=0;
 echo "<table>";
 
 
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
 {
   $rownumber++;
  echo "<tr><td class='footerLogoH'><img src=\"" . $PathImage . $row['image'] . "\"  width =" .  $ImageSize . "alt = \"" . $row['caption'] . "\">" ;

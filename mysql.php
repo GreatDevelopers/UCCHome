@@ -9,13 +9,13 @@ $database = "db";
 
 
 
-$con = mysql_connect($host,$user,$passwd);
+$con = mysqli_connect($host,$user,$passwd);
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
 
-mysql_select_db($database, $con);
+mysqli_select_db($con, $database);
+# mysqli_select_db($database);
 
 ?>
-

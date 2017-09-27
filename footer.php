@@ -7,14 +7,14 @@ $PathImage="ukieri_logo/";
 $FooterWidth="60px";
 //mysql_select_db("django", $con);
 
-$result = mysql_query("SELECT * FROM ukieri_participants order by `weight`");
+$result = mysqli_query($con, "SELECT * FROM ukieri_participants order by `weight`");
 echo "<div class=\"footerLogo\"><h2>Host Organizations</h2>";
-while($row = mysql_fetch_array($result))  //To excute result query 
+while($row = mysqli_fetch_array($result))  //To excute result query 
   {
 echo "<a href='http://".$row['website']."' target='_blank' style='margin:10px'><img src=\"" . $PathImage . $row['logo'] .  "\" height = $FooterWidth  alt=\"logo\" ></a>";
   }
 echo "</div>";
-mysql_close($con);
+mysqli_close($con);
 ?>
 <div class="footer"><div class='GapLarge'>
 Host Organisations: <a class="footerLinks" href="?refNo=11&amp;fileRef=TradeFair">Dr B R Ambedkar National Institute of Technology,</a> <a class="footerLinks" href="?refNo=10&amp;fileRef=TradeFair">Jalandhar</a> 

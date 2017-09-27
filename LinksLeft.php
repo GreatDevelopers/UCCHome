@@ -8,15 +8,14 @@ Presenting following six conferences:
 
 
 <?php
-
 $ConfNo = "ConfNo";
 $Table = "conf_name";
 
-$result = mysql_query("SELECT * FROM $Table");
+$result = mysqli_query($con, "SELECT * FROM $Table");
 
 $rownumber=0;
 
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
  { 
   if($rownumber%2==0) $layout="RowEvenS";
   else
