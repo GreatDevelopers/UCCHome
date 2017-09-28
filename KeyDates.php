@@ -3,7 +3,7 @@ $Table = "key_dates";
 
 $sql = "SELECT * FROM $Table" ;
 
-$result = mysql_query($sql);
+$result = mysqli_query($con, $sql);
 
 $rownumber=0;
 ?>
@@ -11,7 +11,7 @@ $rownumber=0;
 <?php
 echo "<table class='table_class'>";
 
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
  { 
   if($rownumber%2==0) $layout="RowEvenC";
   else

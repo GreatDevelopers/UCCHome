@@ -1,7 +1,7 @@
 <?php
 $Table = "User";
 
-while ( $row2 = mysql_fetch_array($res2))
+while ( $row2 = mysqli_fetch_array($res2))
 {
 
 $sql = "select * from $Table where org = ";
@@ -10,10 +10,10 @@ $sql .= $row2['position'] . " order by `Weight`";
 
 //echo $sql;
 
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 //$rownumber=0;
 //echo "<table>";
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
   if($rownumber%2==0) $layout="RowEvenC";
   else

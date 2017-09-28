@@ -3,9 +3,9 @@ $table="Slot";
 $sql = "select * from $table where key_id= '$refNo' ";
 
 $PathImage="../Pictures/";
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 echo "<table>";
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
 if($rownumber%2==0) $layout="RowEvenCH";
   else
@@ -43,9 +43,9 @@ $table="Config";
 $sql = "select * from $table where id= '$refNo' ";
 
 $PathImage="../Pictures/";
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
 if($rownumber%2==0) $layout="RowEvenC";
   else
@@ -72,9 +72,9 @@ echo $item[0];
 $sql = "select * from opening_paper where id = '$refNo' ";
 //echo "\n $sql \n";
 $PathImage="../Pictures/";
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
 if($rownumber%2==0) $layout="RowEvenC";
   else
@@ -100,9 +100,9 @@ echo $item[0];
 $sql = "select * from $table where key= '$refNo' ";
 //echo "\n $sql \n";
 //$PathImage="../Pictures/";
-$res = mysql_query($sql);
+$res = mysqli_query($con, $sql);
 
-while ( $row = mysql_fetch_array($res))
+while ( $row = mysqli_fetch_array($res))
 {
 if($rownumber%2==0) $layout="RowEvenC";
   else
@@ -124,8 +124,8 @@ echo $item[0];
 $refNo = $_GET['refNo'];
 $tablename="keynotes";
 $sql = "select * from $tablename where user_id = '$refNo' ";
-$res = mysql_query($sql);
-while ( $row = mysql_fetch_array($res))
+$res = mysqli_query($con, $sql);
+while ( $row = mysqli_fetch_array($res))
 {
  if($rownumber%2==0) $layout="RowOddCH";
   else

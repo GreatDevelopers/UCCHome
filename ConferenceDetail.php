@@ -3,8 +3,8 @@
 $heading = "<div class='bgRed'>Conference $refNo</div>";
 $Table = "conf_name";
 $sql = "SELECT * FROM $Table where id = $refNo";
-$result = mysql_query($sql);
-while($row = mysql_fetch_array($result))
+$result = mysqli_query($con, $sql);
+while($row = mysqli_fetch_array($result))
  {
   $heading .=  "<div class='bgGrey'>" .$row['name']. "</div>";
  }
@@ -15,13 +15,13 @@ echo $heading;
 
 $Table = "ResearchTopic";
 $sql = "SELECT * FROM $Table where Conf_ID = '$refNo'" ;
-$result = mysql_query($sql);
+$result = mysqli_query($con, $sql);
 
 $rownumber=0;
 
 echo "<table>";
 
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
  { 
   if($rownumber%2==0) $layout="RowEvenC";
   else
